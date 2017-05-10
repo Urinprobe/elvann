@@ -1,6 +1,6 @@
 /* Remove the navbar's default margin-bottom and rounded borders */
 
-html, p, a, span, div{
+html, p, a:not(.glyphicon), span:not(.glyphicon), div{
 	font-family: 'Convergence', sans-serif !important;
 }
 
