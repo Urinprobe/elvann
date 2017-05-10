@@ -1,17 +1,17 @@
 /* Remove the navbar's default margin-bottom and rounded borders */
 
 html, p, a:not(.glyphicon), span:not(.glyphicon), div{
-	font-family: 'Convergence', sans-serif !important;
+	font-family: 'Convergence', sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
-	font-family: 'Suez One', serif !important;
+	font-family: 'Suez One', serif;
 }
 
 
 .navbar {
-	margin-bottom: 0 !important;
-	border-radius: 0 !important;
+	margin-bottom: 0;
+	border-radius: 0;
 }
 
 /* Add a gray background color and some padding to the footer */
