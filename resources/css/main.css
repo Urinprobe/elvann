@@ -30,6 +30,7 @@ a {
 a:hover, a:focus {
 	color: #3c3c3c;
 	text-decoration: none;
+
 }
 
 a:focus {
@@ -40,6 +41,30 @@ a:focus {
 .navbar {
 	margin-bottom: 0;
 	border-radius: 0;
+}
+
+/* Adds a dark background to a section + some padding*/
+/*Do not use along with container or it does some weird spaces*/
+
+.container-dark{
+
+	background-color: #262626 !important;
+	color: #cccccc;
+	padding: 25px;
+
+}
+
+.container-dark a:hover, .container-dark a:focus {
+	color: #ffffff;
+	text-decoration: none;
+
+}
+
+.container-white{
+
+	background-color: #ffffff !important;
+	color: #262626;
+	padding: 25px;
 }
 
 /* Add a gray background color and some padding to the footer */

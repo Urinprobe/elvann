@@ -18,13 +18,13 @@
 <nav class="navbar navbar-inverse">
 	<div class="container-fluid">
 		<div class="navbar-header">
-			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar"> <!-- TODO: Make the logo hover + make pixel perfect-->
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar"> <!-- TODO: Make the logo hover-->
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
 			</button>
 			<!--TODO: Make the image faster image download-->
-			<a class="collapse navbar-collapse" href="./index.html"><img src="./resources/img/elvann_icon.png"  class=" img-responsive" style="height:50px; padding:10px;" alt="Image"></a>
+			<a class="collapse navbar-collapse" href="./index.html"><img src="./resources/img/elvann_icon.svg"  class="img-responsive" style="height:50px; padding:10px;" alt="Image"></a>
 		</div>
 		<div class="collapse navbar-collapse" id="myNavbar">
 			<ul class="nav navbar-nav"><!-- TODO: Menu text must only appear when hovered on desktop, but has to appear when the device size triggers the menu -->
@@ -60,6 +60,14 @@
 				<!-- TODO: The image should always appear entirely independently from the device size -->
 				<img src="./resources/img/logo_elvann.png"  class=" img-responsive" style="height:20px;width:auto;padding:10px;" alt="Image">
 				<p>"The Geek Gamer Girl That Plays Harp & Sings Opera"</p>
+				<a href="http://www.twitch.tv/ElvannAbendroth" target="_blank">
+					<button class="btn btn-lg btn-default">JOIN ME LIVE!</button><br>
+					<a href="#presentation">
+						<i class="fa fa-5x fa-angle-down" aria-hidden="true"></i> <!--TODO: Make an animation for the scrolling-->
+					</a>
+				</a>
+				<br>
+				<br>
 			</div>
 		</div>
 
@@ -94,7 +102,9 @@
 <!-- End myCarousel -->
 
 <!-- Main Social Icons -->
-<div class="container text-center" style="padding-top:90px;">
+<div id="mainSocial" class="container text-center">
+	<br>
+	<br>
 	<div class="row">
 		<div class="col-sm-4">
 			<a href="https://www.youtube.com/c/elvannabendroth" target="_blank">
@@ -112,28 +122,36 @@
 			</a>
 		</div>
 	</div>
+	<br>
+
+	<br>
 </div>
-<br>
-<hr>
+
+
 <!-- End Main Social Icons -->
 
 <!-- Presentation-->
-<div class="container text-center">
-	<div class="row">
-		<div class="mx-auto">
-			<!--TODO: How to make the video a relative size to the container???-->
-			<iframe width="853" height="480" src="https://www.youtube.com/embed/F6yxCr-VjO4" frameborder="0" allowfullscreen></iframe>
-		</div>
+<div id="presentation" class="container-dark text-center">
+	<h2>Presentation</h2>
 		<br>
+		<div class="row">
+			<div class="mx-auto text-center">
+				<!--TODO: How to make the video a relative size to the container???-->
+				<iframe width="853" height="480" src="https://www.youtube.com/embed/F6yxCr-VjO4" frameborder="0" allowfullscreen></iframe>
+			</div>
+			<br>
+		</div>
 
-	</div>
-
+	<br>
+	<a href="#extraLinks">
+		<i class="fa fa-5x fa-angle-down" aria-hidden="true"></i><!--TODO: Make an animation for the scrolling-->
+	</a>
 </div>
-<br>
+
 <!-- End Presentation-->
 
 <!-- extra links-->
-<div class="container text-center">
+<div id="extraLinks" class="container text-center">
 	<div class="row">
 
 		<div class="col-sm-4" style="padding:30px;">
@@ -173,12 +191,21 @@
 			</a>
 		</div>
 	</div>
+	<br>
+	<a href="#footer">
+		<i class="fa fa-5x fa-angle-down" aria-hidden="true"></i> <!--TODO: Make an animation for the scrolling-->
+	</a>
+	<br>
 </div>
+
 <!-- end extra links-->
-<br>
+
+<div>
+
+</div>
 
 <!-- Footer -->
-<footer class="container-fluid text-center">
+<footer id="footer" class="container-fluid text-center">
 	<p>Sponsored by Stream Elements</p>
 	<p>For Business inquiries contact me via @</p>
 </footer>
