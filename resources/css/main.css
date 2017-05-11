@@ -48,7 +48,7 @@ a:focus {
 
 .container-dark{
 
-	background-color: #262626 !important;
+	background-color: #262626;
 	color: #cccccc;
 	padding: 25px;
 
@@ -62,7 +62,7 @@ a:focus {
 
 .container-white{
 
-	background-color: #ffffff !important;
+	background-color: #ffffff;
 	color: #262626;
 	padding: 25px;
 }
