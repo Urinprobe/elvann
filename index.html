@@ -13,20 +13,22 @@
 </head>
 <body>
 
+<!-- Navigation -->
+<!--TODO: Fix the navbar on top of the screen-->
 <nav class="navbar navbar-inverse">
 	<div class="container-fluid">
 		<div class="navbar-header">
-			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar"> <!-- TODO: Make the logo hover + make pixel perfect-->
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
 			</button>
-			<img src="./resources/img/elvann_logo.png" href="#" class=" img-responsive" style="height:50px; padding:10px;"
-				 alt="Image">
+			<!--TODO: Make the image faster image download-->
+			<a class="collapse navbar-collapse" href="./index.html"><img src="./resources/img/elvann_icon.png"  class=" img-responsive" style="height:50px; padding:10px;" alt="Image"></a>
 		</div>
 		<div class="collapse navbar-collapse" id="myNavbar">
-			<ul class="nav navbar-nav">
-				<li class="active"><a href="#"><i class="fa fa-lg fa-home" aria-hidden="true"></i> Home</a></li>
+			<ul class="nav navbar-nav"><!-- TODO: Menu text must only appear when hovered on desktop, but has to appear when the device size triggers the menu -->
+				<li class="active"><a href="./index.html"><i class="fa fa-lg fa-home" aria-hidden="true"></i> Home</a></li>
 				<li><a href="#"><i class="fa fa-lg fa-headphones" aria-hidden="true"></i> Music</a></li>
 				<li><a href="#"><i class="fa fa-lg fa-usd" aria-hidden="true"></i> Tip</a></li>
 				<li><a href="#"><i class="fa fa-lg fa-shopping-cart" aria-hidden="true"></i> Shop</a></li>
@@ -34,13 +36,14 @@
 				<li><a href="#"><i class="fa fa-lg fa-commenting" aria-hidden="true"></i> Blog</a></li>
 			</ul>
 			<ul class="nav navbar-nav navbar-right">
-				<li><a href="#"><i class="fa fa-lg fa-question" aria-hidden="true"></i></a></li>
-				<li><a href="#"><i class="fa fa-lg fa-sign-in" aria-hidden="true"></i> Login</a></li>
+				<li><a href="./faq.html"><i class="fa fa-lg fa-question" aria-hidden="true"></i></a></li>
+				<li class="disabled"><a href="#"><i class="fa fa-lg fa-sign-in" aria-hidden="true"></i> Login</a></li>
 			</ul>
 		</div>
 	</div>
 </nav>
-
+<!-- End Navigation -->
+<!-- myCarousel -->
 <div id="myCarousel" class="carousel slide" data-ride="carousel">
 	<!-- Indicators -->
 	<ol class="carousel-indicators">
@@ -52,9 +55,10 @@
 	<!-- Wrapper for slides -->
 	<div class="carousel-inner" role="listbox">
 		<div class="item active">
-			<img src="https://placehold.it/1200x400?text=MAIN PHOTO" alt="Image">
+			<img src="https://placehold.it/1200x400?text=>^o^<" alt="Image">
 			<div class="carousel-caption">
-				<h3>Elvann Abendroth</h3>
+				<!-- TODO: The image should always appear entirely independently from the device size -->
+				<img src="./resources/img/logo_elvann.png"  class=" img-responsive" style="height:20px;width:auto;padding:10px;" alt="Image">
 				<p>"The Geek Gamer Girl That Plays Harp & Sings Opera"</p>
 			</div>
 		</div>
@@ -87,69 +91,98 @@
 		<span class="sr-only">Next</span>
 	</a>
 </div>
+<!-- End myCarousel -->
 
-<div class="container text-center">
-	<h3>(links)</h3><br>
+<!-- Main Social Icons -->
+<div class="container text-center" style="padding-top:90px;">
 	<div class="row">
 		<div class="col-sm-4">
-			<i class="fa fa-10x fa-youtube-play" aria-hidden="true"></i>
+			<a href="https://www.youtube.com/c/elvannabendroth" target="_blank">
+				<i class="fa fa-12x fa-youtube-play" aria-hidden="true"></i>
+			</a>
 		</div>
 		<div class="col-sm-4">
-			<i class="fa fa-10x fa-twitch" aria-hidden="true"></i>
+			<a href="https://www.twitch.tv/elvannabendroth" target="_blank">
+				<i class="fa fa-12x fa-twitch" aria-hidden="true" ></i>
+			</a>
 		</div>
 		<div class="col-sm-4">
-			<i class="fa fa-10x fa-shopping-bag" aria-hidden="true"></i>
+			<a href="https://teespring.com/stores/elvannabendroth-3" target="_blank">
+				<i class="fa fa-12x fa-shopping-bag" aria-hidden="true" ></i>
+			</a>
 		</div>
 	</div>
 </div>
 <br>
+<hr>
+<!-- End Main Social Icons -->
 
+<!-- Presentation-->
 <div class="container text-center">
-	<h3>(Presentation Video)</h3><br>
 	<div class="row">
-		<div class="col centered"><img src="https://placehold.it/900x500?text=VIDEO" class=" img-responsive" style="" alt="Image"></div>
+		<div class="mx-auto">
+			<!--TODO: How to make the video a relative size to the container???-->
+			<iframe width="853" height="480" src="https://www.youtube.com/embed/F6yxCr-VjO4" frameborder="0" allowfullscreen></iframe>
+		</div>
 		<br>
-		<div class="btn btn-default">More info</div>
+
 	</div>
+
 </div>
 <br>
+<!-- End Presentation-->
 
+<!-- extra links-->
 <div class="container text-center">
-	<h3>Other options</h3><br>
 	<div class="row">
 
-		<div class="col-sm-3">
-			<img src="https://placehold.it/150x150?text=VIP" class="img-responsive" style="width:100%" alt="Image">
+		<div class="col-sm-4" style="padding:30px;">
+			<a href="#">
+				<i class="fa fa-10x fa-star" aria-hidden="true"></i>
+				<h3>V.I.P.</h3>
+			</a>
 		</div>
-		<div class="col-sm-3">
-			<img src="https://placehold.it/150x150?text=Download" class="img-responsive" style="width:100%" alt="Image">
+		<div class="col-sm-4" style="padding:30px;">
+			<a href="#">
+				<i class="fa fa-10x fa-download" aria-hidden="true"></i>
+				<h3>Downloads</h3>
+			</a>
 		</div>
-		<div class="col-sm-3">
-			<img src="https://placehold.it/150x150?text=Discord" class="img-responsive" style="width:100%" alt="Image">
+		<div class="col-sm-4" style="padding:30px;">
+			<a href="https://discord.gg/TBW8yX9" target="_blank">
+				<i class="fa fa-10x fa-users" aria-hidden="true"></i>
+				<h3>Community</h3>
+			</a>
 		</div>
-		<div class="col-sm-3">
-			<img src="https://placehold.it/150x150?text=Music" class="img-responsive" style="width:100%" alt="Image">
+		<div class="col-sm-4" style="padding:30px;">
+			<a href="#">
+				<i class="fa fa-10x fa-headphones" aria-hidden="true"></i>
+				<h3>Music</h3>
+			</a>
 		</div>
-		<div class="col-sm-3">
-			<img src="https://placehold.it/150x150?text=Sponsor" class="img-responsive" style="width:100%" alt="Image">
+		<div class="col-sm-4" style="padding:30px;">
+			<a href="#">
+				<i class="fa fa-10x fa-rocket" aria-hidden="true"></i>
+				<h3>Stream Elements</h3>
+			</a>
 		</div>
-		<div class="col-sm-3">
-			<img src="https://placehold.it/150x150?text=VIP" class="img-responsive" style="width:100%" alt="Image">
-		</div>
-		<div class="col-sm-3">
-			<img src="https://placehold.it/150x150?text=Download" class="img-responsive" style="width:100%" alt="Image">
-		</div>
-		<div class="col-sm-3">
-			<img src="https://placehold.it/150x150?text=Discord" class="img-responsive" style="width:100%" alt="Image">
+		<div class="col-sm-4" style="padding:30px;">
+			<a href="#">
+				<i class="fa fa-10x fa-graduation-cap" aria-hidden="true"></i>
+				<h3>Lessons</h3>
+			</a>
 		</div>
 	</div>
 </div>
+<!-- end extra links-->
 <br>
 
+<!-- Footer -->
 <footer class="container-fluid text-center">
 	<p>Sponsored by Stream Elements</p>
 	<p>For Business inquiries contact me via @</p>
 </footer>
+<!-- End Footer -->
 
 </body>
 </html>

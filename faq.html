@@ -1,0 +1,104 @@
+<!--content reference page only.-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Bootstrap Example</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="./vendor/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="./vendor/font-awesome-4.7.0/css/font-awesome.min.css">
+	<script src="./vendor/jquery/jquery-3.2.1.min.js"></script>
+	<script src="./vendor/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Convergence|Suez+One" rel="stylesheet">
+	<link rel="stylesheet" href="./resources/css/main.css">
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="navbar navbar-inverse">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="collapse navbar-collapse" href="./index.html"><img src="./resources/img/elvann_icon.png"  class=" img-responsive" style="height:50px; padding:10px;" alt="Image"></a>
+		</div>
+		<div class="collapse navbar-collapse" id="myNavbar">
+			<ul class="nav navbar-nav">
+				<li ><a href="./index.html"><i class="fa fa-lg fa-home" aria-hidden="true"></i> Home</a></li>
+				<li><a href="#"><i class="fa fa-lg fa-headphones" aria-hidden="true"></i> Music</a></li>
+				<li><a href="#"><i class="fa fa-lg fa-usd" aria-hidden="true"></i> Tip</a></li>
+				<li><a href="#"><i class="fa fa-lg fa-shopping-cart" aria-hidden="true"></i> Shop</a></li>
+				<li><a href="#"><i class="fa fa-lg fa-star" aria-hidden="true"></i> V.I.P.</a></li>
+				<li><a href="#"><i class="fa fa-lg fa-commenting" aria-hidden="true"></i> Blog</a></li>
+			</ul>
+			<ul class="nav navbar-nav navbar-right">
+				<li class="active"><a href="./faq.html"><i class="fa fa-lg fa-question" aria-hidden="true"></i></a></li>
+				<li class="disabled"><a href="#"><i class="fa fa-lg fa-sign-in" aria-hidden="true"></i> Login</a></li>
+			</ul>
+		</div>
+	</div>
+</nav>
+<!-- End Navigation -->
+
+
+
+<div class="container">
+	<h1>F.A.Q</h1>
+	<p>Frequently Asked Questions</p>
+	<!-- Accordion Test-->
+	<div class="panel-group center-block" style="padding:20px;width:840px;" id="accordion">
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h4 class="panel-title">
+					<a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
+						Bio</a>
+				</h4>
+			</div>
+			<div id="collapse1" class="panel-collapse collapse">
+				<div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+					sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+					minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+					commodo consequat.</div>
+			</div>
+		</div>
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h4 class="panel-title">
+					<a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
+						Projects</a>
+				</h4>
+			</div>
+			<div id="collapse2" class="panel-collapse collapse">
+				<div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+					sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+					minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+					commodo consequat.</div>
+			</div>
+		</div>
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h4 class="panel-title">
+					<a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
+						Harps</a>
+				</h4>
+			</div>
+			<div id="collapse3" class="panel-collapse collapse">
+				<div class="panel-body text-justify"><li>Salvi Arion SG 47 (Harpe à pédales)
+					Parfaites pour une ambiance sophistiquée et pour la musique classique. très grande versatilité pour le répertoire, et offre définitivement un cachet fantaisiste à un évènement!</li>
+					<br>
+					<li>Lyon & Healy Silhouette (Electrique /Celtique)
+						Offre la possibilité d'explorer des sonorités tout à fait contemporaines & inusitées! Offre un répertoire plus restreint, mais offre des possibilités aussi plus lounge / jazz.</li></div>
+			</div>
+		</div>
+		<br>
+		<div class="btn btn-m btn-default">More info</div>
+	</div>
+	<!-- End Accordion Test-->
+</div>
+
+
+</body>
+</html>
