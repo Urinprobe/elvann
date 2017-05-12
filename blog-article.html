@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Bootstrap Example</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="./vendor/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="./vendor/font-awesome-4.7.0/css/font-awesome.min.css">
+	<script src="./vendor/jquery/jquery-3.2.1.min.js"></script>
+	<script src="./vendor/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Convergence|Suez+One" rel="stylesheet">
+	<link rel="stylesheet" href="./resources/css/main.css">
+</head>
+<body>
+
+<!-- Navigation -->
+<!--TODO: Fix the navbar on top of the screen-->
+<nav class="navbar navbar-inverse navbar-fixed-top">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar"> <!-- TODO: Make the logo hover-->
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<!--TODO: Make the image faster image download-->
+			<a class="collapse navbar-collapse" href="./index.html"><img src="./resources/img/elvann_icon.svg"  class="img-responsive" style="height:50px; padding:10px;" alt="Image"></a>
+		</div>
+		<div class="collapse navbar-collapse" id="myNavbar">
+			<ul class="nav navbar-nav"><!-- TODO: Menu text must only appear when hovered on desktop, but has to appear when the device size triggers the menu -->
+				<li class="active"><a href="./index.html"><i class="fa fa-lg fa-home" aria-hidden="true"></i> Home</a></li>
+				<li><a href="#"><i class="fa fa-lg fa-headphones" aria-hidden="true"></i> Music</a></li>
+				<li><a href="#"><i class="fa fa-lg fa-usd" aria-hidden="true"></i> Tip</a></li>
+				<li><a href="#"><i class="fa fa-lg fa-shopping-cart" aria-hidden="true"></i> Shop</a></li>
+				<li><a href="#"><i class="fa fa-lg fa-star" aria-hidden="true"></i> V.I.P.</a></li>
+				<li><a href="#"><i class="fa fa-lg fa-commenting" aria-hidden="true"></i> Blog</a></li>
+			</ul>
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="./faq.html"><i class="fa fa-lg fa-question" aria-hidden="true"></i></a></li>
+				<li class="disabled"><a href="#"><i class="fa fa-lg fa-sign-in" aria-hidden="true"></i> Login</a></li>
+			</ul>
+		</div>
+	</div>
+</nav>
+<div class="jumbotron"><</div>
+
+<div class="container-fluid">
+
+	<div class="row content">
+		<div class="col-sm-3 sidenav">
+			<h4>John's Blog</h4>
+			<ul class="nav nav-pills nav-stacked">
+				<li class="active"><a href="#section1">Home</a></li>
+				<li><a href="#section2">Friends</a></li>
+				<li><a href="#section3">Family</a></li>
+				<li><a href="#section3">Photos</a></li>
+			</ul><br>
+			<div class="input-group">
+				<input type="text" class="form-control" placeholder="Search Blog..">
+				<span class="input-group-btn">
+          <button class="btn btn-default" type="button">
+            <span class="glyphicon glyphicon-search"></span>
+          </button>
+        </span>
+			</div>
+		</div>
+
+		<div class="col-sm-9">
+			<h4><small>RECENT POSTS</small></h4>
+			<hr>
+			<h2>I Love Food</h2>
+			<h5><span class="glyphicon glyphicon-time"></span> Post by Jane Dane, Sep 27, 2015.</h5>
+			<h5><span class="label label-danger">Food</span> <span class="label label-primary">Ipsum</span></h5><br>
+			<p>Food is my passion. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+			<br><br>
+
+			<h4><small>RECENT POSTS</small></h4>
+			<hr>
+			<h2>Officially Blogging</h2>
+			<h5><span class="glyphicon glyphicon-time"></span> Post by John Doe, Sep 24, 2015.</h5>
+			<h5><span class="label label-success">Lorem</span></h5><br>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+			<hr>
+
+			<h4>Leave a Comment:</h4>
+			<form role="form">
+				<div class="form-group">
+					<textarea class="form-control" rows="3" required></textarea>
+				</div>
+				<button type="submit" class="btn btn-success">Submit</button>
+			</form>
+			<br><br>
+
+			<p><span class="badge">2</span> Comments:</p><br>
+
+			<div class="row">
+				<div class="col-sm-2 text-center">
+					<img src="bandmember.jpg" class="img-circle" height="65" width="65" alt="Avatar">
+				</div>
+				<div class="col-sm-10">
+					<h4>Anja <small>Sep 29, 2015, 9:12 PM</small></h4>
+					<p>Keep up the GREAT work! I am cheering for you!! Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+					<br>
+				</div>
+				<div class="col-sm-2 text-center">
+					<img src="bird.jpg" class="img-circle" height="65" width="65" alt="Avatar">
+				</div>
+				<div class="col-sm-10">
+					<h4>John Row <small>Sep 25, 2015, 8:25 PM</small></h4>
+					<p>I am so happy for you man! Finally. I am looking forward to read about your trendy life. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+					<br>
+					<p><span class="badge">1</span> Comment:</p><br>
+					<div class="row">
+						<div class="col-sm-2 text-center">
+							<img src="bird.jpg" class="img-circle" height="65" width="65" alt="Avatar">
+						</div>
+						<div class="col-xs-10">
+							<h4>Nested Bro <small>Sep 25, 2015, 8:28 PM</small></h4>
+							<p>Me too! WOW!</p>
+							<br>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<footer class="container-fluid">
+	<p>Footer Text</p>
+</footer>
+
+</body>
+</html>
