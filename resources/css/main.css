@@ -95,3 +95,8 @@ footer {
 .fa-12x {
 	font-size: 12em;
 }
+
+/* class meant to be used along with button (btn), to add a margin around them so they are more spaced out.*/
+.tag {
+	margin:5px !important;
+}
