@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Bootstrap Example</title>
+	<title>Elvann</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="./vendor/bootstrap-3.3.7-dist/css/bootstrap.min.css">
 	<link rel="stylesheet" href="./vendor/font-awesome-4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="./css/emoji.css">
 	<script src="./vendor/jquery/jquery-3.2.1.min.js"></script>
 	<script src="./vendor/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+	<script src="//twemoji.maxcdn.com/twemoji.min.js"></script>
+	<script src="./js/emoji.js"></script>
 	<link href="https://fonts.googleapis.com/css?family=Convergence|Suez+One" rel="stylesheet">
 	<link rel="stylesheet" href="./resources/css/main.css">
 </head>
@@ -28,12 +31,12 @@
 		</div>
 		<div class="collapse navbar-collapse" id="myNavbar">
 			<ul class="nav navbar-nav"><!-- TODO: Menu text must only appear when hovered on desktop, but has to appear when the device size triggers the menu -->
-				<li class="active"><a href="./index.html"><i class="fa fa-lg fa-home" aria-hidden="true"></i> Home</a></li>
-				<li><a href="#"><i class="fa fa-lg fa-headphones" aria-hidden="true"></i> Music</a></li>
-				<li><a href="#"><i class="fa fa-lg fa-usd" aria-hidden="true"></i> Tip</a></li>
-				<li><a href="#"><i class="fa fa-lg fa-shopping-cart" aria-hidden="true"></i> Shop</a></li>
-				<li><a href="#"><i class="fa fa-lg fa-star" aria-hidden="true"></i> V.I.P.</a></li>
-				<li><a href="#"><i class="fa fa-lg fa-commenting" aria-hidden="true"></i> Blog</a></li>
+				<li class=""><a href="./index.html"><i class="fa fa-lg fa-home" aria-hidden="true"></i> Home</a></li>
+				<li><a href="https://soundcloud.com/elvannabendroth" target="_blank"><i class="fa fa-lg fa-headphones" aria-hidden="true"></i> Music</a></li>
+				<li><a href="https://streamelements.com/tip/elvannabendroth" target="_blank"><i class="fa fa-lg fa-usd" aria-hidden="true"></i> Tip</a></li>
+				<li><a href="https://teespring.com/stores/elvannabendroth-3" target="_blank"><i class="fa fa-lg fa-shopping-cart" aria-hidden="true"></i> Shop</a></li>
+				<li class="disabled"><a href="#"><i class="fa fa-lg fa-star" aria-hidden="true"></i> V.I.P.</a></li>
+				<li class="disabled"><a href="#"><i class="fa fa-lg fa-commenting" aria-hidden="true"></i> Blog</a></li>
 			</ul>
 			<ul class="nav navbar-nav navbar-right">
 				<li><a href="./faq.html"><i class="fa fa-lg fa-question" aria-hidden="true"></i></a></li>
@@ -48,20 +51,20 @@
 	<!-- Indicators -->
 	<ol class="carousel-indicators">
 		<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-		<li data-target="#myCarousel" data-slide-to="1"></li>
-		<li data-target="#myCarousel" data-slide-to="2"></li>
+
 	</ol>
 
 	<!-- Wrapper for slides -->
 	<div class="carousel-inner" role="listbox">
 		<div class="item active">
-			<img src="https://placehold.it/1200x400?text=>^o^<" alt="Image">
+			<img src="./resources/img/banner-1.jpg" alt="Image">
 			<div class="carousel-caption">
 				<!-- TODO: The image should always appear entirely independently from the device size -->
-				<img src="./resources/img/logo_elvann.png"  class=" img-responsive" style="height:20px;width:auto;padding:10px;" alt="Image">
+				<img src="./resources/img/logo-w-drop.png"  class="img-responsive" style="height:100px;width:auto;padding:100px;padding-bottom:0px;" alt="Image">
 				<p>"The Geek Gamer Girl That Plays Harp & Sings Opera"</p>
 				<a href="http://www.twitch.tv/ElvannAbendroth" target="_blank">
-					<button class="btn btn-lg btn-default">JOIN ME LIVE!</button><br>
+					<br>
+					<a href="http://www.twitch.tv/ElvannAbendroth" target="_blank"><button class="btn btn-lg btn-default"><i class="fa fa-lg fa-twitch" aria-hidden="true"></i>  JOIN ME LIVE!</button><br></a>
 					<a href="#presentation">
 						<i class="fa fa-5x fa-angle-down" aria-hidden="true"></i> <!--TODO: Make an animation for the scrolling-->
 					</a>
@@ -71,54 +74,54 @@
 			</div>
 		</div>
 
-		<div class="item">
-			<img src="https://placehold.it/1200x400?text=MERCH" alt="Image">
-			<div class="carousel-caption">
-				<h3>New Merch</h3>
-				<p>visit TeeSpring to know more</p>
-			</div>
-		</div>
-
-		<div class="item">
-			<img src="https://placehold.it/1200x400?text=WEBSITE" alt="Image">
-			<div class="carousel-caption">
-				<h3>New Website</h3>
-				<p>You are the right place!</p>
-			</div>
-		</div>
 
 	</div>
 
+
 	<!-- Left and right controls -->
-	<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-		<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-		<span class="sr-only">Previous</span>
-	</a>
-	<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-		<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-		<span class="sr-only">Next</span>
-	</a>
+
+
 </div>
 <!-- End myCarousel -->
 
 <!-- Main Social Icons -->
 <div id="mainSocial" class="container text-center">
+	<div class="container" style="padding-left:200px;padding-right:200px;padding-top:30px;">
+		<img class="emoji" draggable="false" alt="😳" src="http://twemoji.maxcdn.com/72x72/1f633.png">
+		<h3>SShhhh! Dont tell anyone!</h3>
+		<div class="text-justify">
+			<p class="text-center"> <i>But my website is currently in construction!</i></p>
+
+			<br>
+			<p>Though, I've included a short introduction in case you would like to know a little bit more about me, and as to satisy your curiosity, here's a list of features I would like to include here:</p>
+
+		<ul>
+			<li><b>A blog</b> - where I can share whatever comes through my mind, might it be music advice, stream advice etc.  Like any good blog I would like us to have a comment section so you can react to the posts and share your thoughts too</li>
+			<li><b>Log In</b> - Access to the site using the Twitch API, so you can actually surf the website using your Twitch account! </li>
+			<li><b>V.I.P. Access</b> to Patreons & -future- Subs (We will get there!).  This section would have exclusive music downloads, promo codes and early access material :)</li>
+			<li>A <b>Download Section</b> for everyone to enjoy!  I'd like to include some of the sheet music and records that I do, as well as resources and possibly tutorials!  We'll see!</li>
+			<li><b>Music Learning Resources</b> - a special section reserved for musical resources, with maybe video courses and learning oriented content!</li>
+		</ul>
+
+		<p>Ohhh, and in case you didn't know, I'm coding pretty much everything by hand by myself.  With powers come responsabilities, and when you're doing it the hard way, it usually takes a little bit more time also, but we'll get there bit by bit! (no pun intended <img class="emoji" draggable="false" alt="😂" src="http://twemoji.maxcdn.com/16x16/1f602.png">)</p>
+		</div>
+	</div>
 	<br>
 	<br>
 	<div class="row">
 		<div class="col-sm-4">
 			<a href="https://www.youtube.com/c/elvannabendroth" target="_blank">
-				<i class="fa fa-12x fa-youtube-play" aria-hidden="true"></i>
+				<i class="fa fa-10x fa-youtube-play" aria-hidden="true"></i>
 			</a>
 		</div>
 		<div class="col-sm-4">
 			<a href="https://www.twitch.tv/elvannabendroth" target="_blank">
-				<i class="fa fa-12x fa-twitch" aria-hidden="true" ></i>
+				<i class="fa fa-10x fa-twitch" aria-hidden="true" ></i>
 			</a>
 		</div>
 		<div class="col-sm-4">
 			<a href="https://teespring.com/stores/elvannabendroth-3" target="_blank">
-				<i class="fa fa-12x fa-shopping-bag" aria-hidden="true" ></i>
+				<i class="fa fa-10x fa-shopping-bag" aria-hidden="true" ></i>
 			</a>
 		</div>
 	</div>
@@ -132,8 +135,33 @@
 
 <!-- Presentation-->
 <div id="presentation" class="container-dark text-center">
+	<br>
 	<h2>Presentation</h2>
-		<br>
+	<br>
+	<div class="container text-justify" style="padding-left:200px;padding-right:200px;">
+	<p>
+		Hey there! <img class="emoji" draggable="false" alt="😂" src="http://twemoji.maxcdn.com/16x16/1f607.png"> <img class="emoji" draggable="false" alt="❤" src="http://twemoji.maxcdn.com/16x16/2764.png">
+
+
+		<br><br>
+		My name is Elvann. I'm a classicaly trained singer and a harpist, along being a complete geek and a gamer!  What I do mostly is <b>streaming music on Twitch</b> .  I do live performance, composition & recording, and I also sometimes play games (ARK + Overwatch).  My main influences are Nightwish, Epica & Within Temptation. You can join me LIVE here:   <a href="http://www.twitch.tv/elvannabendroth" target-="_blank"><i class="fa fa-1x fa-twitch" aria-hidden="true" ></i>&nbsp;My&nbsp;Twitch&nbsp;Channel</a>
+		<br><br>
+		If you're a little curious about hearing what I do, you can always stalk me on  <a href="https://soundcloud.com/elvannabendroth" target="_blank"><i class="fa fa-1x fa-soundcloud" aria-hidden="true" ></i>&nbsp;My&nbsp;Soundcloud</a>  or on <a href="https://youtube.com/c/elvannabendroth" target="_blank"><i class="fa fa-1x fa-youtube-play" aria-hidden="true" ></i>&nbsp;My&nbsp;Youtube&nbsp;Channel</a> !  Here's also a few other places where you can find me:
+		<br><br>
+		<ul>
+		<li><a href="https://youtube.com/c/elvannabendroth" target="_blank"><i class="fa fa-1x fa-twitter" aria-hidden="true" ></i> My Twitter</a> - So the birds tell you when I go live!</li>
+		<li><a href="https://youtube.com/c/elvannabendroth" target="_blank"><i class="fa fa-1x fa-heart" aria-hidden="true" ></i> My Patreon</a> - In case you would like to help me out pursuing my dreams! :)</li>
+		<li><a href="https://youtube.com/c/elvannabendroth" target="_blank"><i class="fa fa-1x fa-instagram" aria-hidden="true" ></i> My Instagram</a> - To get obnouxious harp pictures in your feed!</li>
+		<li><a href="https://youtube.com/c/elvannabendroth" target="_blank"><i class="fa fa-1x fa-youtube-play" aria-hidden="true" ></i> My Deviantart</a> - You didn't know it yet, but yes, I do digital painting!</li>
+		<li><a href="https://youtube.com/c/elvannabendroth" target="_blank"><i class="fa fa-1x fa-facebook" aria-hidden="true" ></i> My Facebook</a> - Well, since everybody has it, why not?</li>
+		</ul>
+
+		<br>If you're already following me on every social medias, well... your salker title is well earned, if not, it's time for you to become a proud one! <img class="emoji" draggable="false" alt="😂" src="http://twemoji.maxcdn.com/16x16/1f602.png">
+
+		<br><br>
+
+	</p>
+	</div>
 		<div class="row">
 			<div class="mx-auto text-center">
 				<!--TODO: How to make the video a relative size to the container???-->

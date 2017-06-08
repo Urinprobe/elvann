@@ -100,3 +100,30 @@ footer {
 .tag {
 	margin:5px !important;
 }
+
+/*EXTRA Links color*/
+
+p a, p a:visited {
+
+	color: #a87beb;
+	text-decoration: none;
+
+}
+p a:hover, p a:focus {
+	color: #a87beb;
+	text-decoration: none;
+
+}
+
+ul a, ul a:visited {
+
+	color: #a87beb;
+	text-decoration: none;
+
+}
+ul a:hover, ul a:focus {
+	color: #a87beb;
+	text-decoration: none;
+
+}
+
